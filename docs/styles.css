@@ -1,0 +1,15 @@
+:root {
+  --my-global-black: black;
+  --my-global-white: white;
+}
+
+button.primary {
+  background: var(--my-global-black);
+  color: var(--my-global-white);
+  padding-left: var(--vocs-space_16);
+  padding-right: var(--vocs-space_16);
+  border-radius: var(--vocs-space_4);
+  line-height: var(--vocs-space_32);
+  font-weight: var(--vocs-fontWeight_medium);
+  font-size: var(--vocs-fontSize_14);
+}

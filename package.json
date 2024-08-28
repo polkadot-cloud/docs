@@ -1,0 +1,19 @@
+{
+  "name": "console-docs",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vocs dev",
+    "build": "vocs build",
+    "preview": "vocs preview"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "@types/react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vocs": "1.0.0-alpha.55"
+  },
+  "packageManager": "yarn@4.4.1"
+}
