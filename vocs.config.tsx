@@ -6,6 +6,19 @@ export default defineConfig({
     colorScheme: 'light',
     accentColor: '#552bbf',
   },
+  head() {
+    return (
+      <>
+      <script async defer src="https://apisa.polkadot.cloud/latest.js"></script>
+      <noscript
+        ><img
+          src="https://apisa.polkadot.cloud/noscript.gif"
+          alt=""
+          referrerPolicy="no-referrer-when-downgrade"
+      /></noscript>
+      </>
+    )
+  },
   socials: [
     { 
       icon: 'github', 
