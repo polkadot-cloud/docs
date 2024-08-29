@@ -40,7 +40,7 @@ export default defineConfig({
       items: [
         {
           text: 'Overview',
-          link: '/console',
+          link: '/console/overview',
         },
         {
           text: 'Basics',
@@ -66,7 +66,7 @@ export default defineConfig({
           items: [
             {
               text: 'Add a Chain',
-              link: '/console/resources',
+              link: '/console/resources/adding-a-chain',
             },
           ],
         },
@@ -76,7 +76,7 @@ export default defineConfig({
           items: [
             {
               text: 'Installation',
-              link: '/console/development',
+              link: '/console/development/installation',
             },
           ],
         },
@@ -89,7 +89,7 @@ export default defineConfig({
   topNav: [ 
         { 
           text: 'Developer Console', 
-          link: '/console', 
+          link: '/console/overview', 
         }, 
         { 
           text: 'Contributing', 
