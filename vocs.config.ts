@@ -35,7 +35,15 @@ export default defineConfig({
           items: [
             {
               text: 'Interface Overview',
-              link: '/console/basics',
+              link: '/console/basics/interface-overview',
+            },
+            {
+              text: 'Connecting to a Chain',
+              link: '/console/basics/connecting-to-chain',
+            },
+            {
+              text: 'Workspaces',
+              link: '/console/basics/workspaces',
             },
           ],
         },
