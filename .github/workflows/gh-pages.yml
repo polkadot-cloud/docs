@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: dist
+          path: docs/dist
                 
   deploy:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
     - uses: actions/download-artifact@master
       with:
         name: github-pages
-        path: dist
+        path: docs/dist
     - uses: actions/configure-pages@v5
     - id: deployment
       uses: actions/deploy-pages@main
