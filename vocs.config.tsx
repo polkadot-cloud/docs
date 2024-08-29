@@ -96,5 +96,9 @@ export default defineConfig({
           link: '/contributing', 
         }, 
     { text: 'Blog', link: '/blog', match: '/blog' }, 
+    { 
+      text: 'Portal', 
+      link: 'https://polkadot.cloud', 
+    }
   ],
 })
