@@ -26,8 +26,8 @@ export default defineConfig({
     }
   ], 
   logoUrl: {
-    light: '/logo-light.svg',
-    dark: '/logo-dark.svg',
+    light: '/svg/logo-light.svg',
+    dark: '/svg/logo-dark.svg',
   },
   sidebar: [
     {
