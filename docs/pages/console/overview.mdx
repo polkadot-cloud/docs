@@ -1,3 +1,37 @@
-# Overview
+import { Callout } from 'vocs/components'
 
-Coming soon...
+# Polkadot Developer Console: Overview
+
+The Developer Console documentation is split into three sections, categorised based on the type of user you are:
+
+- **[Basics](/console/basics/interface-overview)**: If you simply wish to use the console, this section explains each feature and how to interact with the console UI.
+- **[Adding Resources](console/resources/adding-a-chain)**: If you wish to add resources, such as a new chain to the directory, this section outlines instructions on how to do so.
+- **[Core Development](/console/development/installation)**: If you are interested in maintaining or growing the console with your own contributions, this section aims to detail the core concepts and structure of the console's codebase.
+
+## About Polkadot Developer Console
+
+Polkadot Developer Console is a next-generation developer tool for the Polkadot ecosystem. A Public Alpha version was [annonced](https://x.com/rossbulat/status/1825967285896380659) in August 2024, and is now live at [console.polkadot.cloud](https://console.polkadot.cloud). The codebase is open sourced [on Github](https://github.com/polkadot-cloud/polkadot-developer-console).
+
+Developer Console has studied and identified issues and shortfalls of [Polkadot JS Apps](https://polkadot.js.org/apps), and aims to take strides in improving the usability, usefulness, and developer documentation (and therefore, maintenance and growth) of the codebase.
+
+### Mission and Purpose
+
+Developer Console is a tool designed for developers only, and this is reflected in its name. This is a departure from Polkadot JS Apps, where its generic name has resulted in new users to Polkadot jumping into JS Apps and then feeling alienated by its complex UI. Developer Console is made by developers, and maintained by developers.
+
+Developer Console builds upon what JS Apps established, but also aims to integrate community feedback to guide the development direction of the project. With this said, features better suited in different form factors, e.g. for wallets, retail products, etc, are stripped away from Developer Console to maintain its focus on developer tooling.
+
+<Callout type="info">
+  If you wish to discuss a new feature for Developer Console, [Github Discussions are now open](https://github.com/polkadot-cloud/polkadot-developer-console/discussions).
+</Callout>
+
+Developer Console attempts to maintain standard ES6 syntax, so [React](https://react.dev/) and [Typescript](https://www.typescriptlang.org/) developers will feel at home developing the console from day one. We believe standard conventions married with excellent documentation can be a recipe for success for the Developer Console.
+
+### North Stars
+
+At a high level, Developer Console aims to achieve the following:
+
+- Develop what is requested and deemed useful by the community to empower Polkadot developers.
+
+- Focus on making Polkadot development easier to understand.
+
+- Focus on making Polkadot easier to use for advanced developer use cases.
