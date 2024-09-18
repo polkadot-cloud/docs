@@ -1,49 +1,54 @@
 # Interface Overview
 
-![Interface Overview](/png/interface-overview.png)
+This page will document the tab interface in Developer Console, and how to connect tabs to different chains.
+
+![Interface Overview](/png/interface-overview/hero.png)
 
 The Polkadot Developer Console provides a user-friendly interface for interacting with various Substrate-based chains, including Polkadot, Kusama, and other compatible networks. The console supports Relay Chains, Parachains, and Solo Chains (Substrate-based chains that are not Parachains). The main components of the interface are:
 
 ## Tabs 
 
-- Users can create new tabs to connect to different chains.
-- Each tab represents a separate connection to a specific chain.
+Tabs are at the foundation of how users interact with and navigate through Developer Console; Each tab is rendered at the top of the UI, and are displayed at all times:
 
-## Chain Selection
+![Interface Tabs](/png/interface-overview/interface-tabs.png)
 
-- Users can select the desired chain to connect to from a list of available chains.
-- The list of chains includes Relay Chains (e.g., Polkadot Relay Chain, Kusama Relay Chain), Parachains, and Solo Chains.
+A tab can host a specific task or connect to a specific chain. Users can create multiple tabs to work on different tasks or connect to different chains simultaneously. Each tab is independent and represents a separate connection to a specific chain.
+
+Tabs include the following features:
+- Auto connect: A tab can connect to its chains automatically upon subsequent visits to the console.
+- Click and drag to re-order a tab.
+- Horizontal scrolling on window overflow.
+- Right click to open a context menu for quick-actions.
+- Close tab: Disconnect from the chain(s) associated with the tab, and close the tab.
+
+## Chain Directory
+
+Users can select the desired chain to connect to from a list of available chains we call a __Directory__:
+
+![Chain Directory](/png/interface-overview/chain-directory.png)
+
+The directory in Developer Console has been designed as a full screen interface, where users can categorise chains and filter them based on their preferences. The directory includes the following features:
+
 - Users can search for a specific chain using the search box or filter chains by tags (e.g., Relay Chain, Canary Network, Test Network).
 - Users can create custom tags to organize chains according to their preferences or project requirements.
 - Custom tags allow users to filter and quickly access specific groups of chains that are relevant to their work (i.e. "Development," "Testing," or "Production" to group chains based on their purpose or stage in the development lifecycle.)
 
-## Provider Selection
+### Task Specific Directories
 
-- After selecting a chain, users can choose a provider from a dropdown menu.
-- The available providers may include Automata 1RPC, Dwellir, Dwellir Tunisia, IBP-GeoDNS1, IBP-GeoDNS2, LuckyFriday, RadiumBlock, and Stakeworld.
+The displayed directory may change based on the active page of the tab. The previous screenshot shows the __Connect__ page directory, that allows any chain to be connected to. However, on the __Parachain Setup__ page, the directory will only show relay chains:
 
-## Auto-Connect
-![Interface Overview](/gif/autoconnect.gif)
-- Users can toggle the "Auto Connect" option to automatically connect to the selected chain upon opening the tab.
+![Parachain Setup Directory](/png/interface-overview/parachain-setup-directory.png)
 
-## Connected Chain Interface
+## Connecting to a Chain
 
-- Once connected to a chain, users have access to three main sections:
-  - **Overview**: Provides general information and details about the connected chain.
-  - **Chain State**: Allows users to explore and interact with the chain's state, including storage items, runtime constants, and raw storage.
-  - **Extrinsics**: Enables users to compose and submit extrinsics (transactions) to the connected chain.
+Pressing the __Connect__ button associated with a chain will open a list of RPC providers to choose from. Once an RPC provider is selected, the tab will connect to the chain (or chains) automatically.
 
-## Tab Management
+![Connect to RPC Provider](/png/interface-overview/connect-rpc-providers.png)
 
-- Tabs can be reordered by dragging and dropping them to the desired position.
-- Tabs can be closed to disconnect from the corresponding chain.
-- On the right-hand side of each tab, there is a "Manage Tab" icon that provides additional options:
-  - **Rename**: Allows users to rename the tab for better identification.
-  - **Auto-Connect**: Enables or disables the auto-connect feature for the specific tab.
-  - **Disconnect**: Disconnects the tab from the connected API instance.
+## Connecting to a Custom Endpoint
 
-## Custom Endpoint
+In addition to the predefined chain directory, users have the option to connect to a custom endpoint by providing the WSS endpoint URL.
 
-- In addition to the predefined chain directory, users have the option to connect to a custom endpoint by providing the necessary details.
+![Custom Endpoints](/png/interface-overview/connect-custom-endpoint.png)
 
 The Polkadot Developer Console offers a streamlined and intuitive interface for developers to interact with different Polkadot and Kusama networks, making it easier to test, debug, and develop applications in a controlled environment.
