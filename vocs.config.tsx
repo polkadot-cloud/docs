@@ -37,9 +37,16 @@ export default defineConfig({
               text: 'Interface Overview',
               link: '/console/basics/interface-overview',
             },
+
             {
-              text: 'Workspaces',
-              link: '/console/basics/workspaces',
+              text: 'Settings',
+              collapsed: false,
+              items: [
+                {
+                  text: 'Workspaces',
+                  link: '/console/basics/settings/workspaces',
+                },
+              ],
             },
           ],
         },
