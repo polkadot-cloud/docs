@@ -38,10 +38,6 @@ export default defineConfig({
               link: '/console/basics/interface-overview',
             },
             {
-              text: 'Connecting to a Chain',
-              link: '/console/basics/connecting-to-chain',
-            },
-            {
               text: 'Workspaces',
               link: '/console/basics/workspaces',
             },
