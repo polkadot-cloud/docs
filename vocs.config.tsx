@@ -68,6 +68,10 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              text: 'Wallet Connection',
+              link: '/console/basics/wallets',
+            },
           ],
         },
         {
