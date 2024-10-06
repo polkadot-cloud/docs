@@ -37,16 +37,27 @@ export default defineConfig({
               text: 'Interface Overview',
               link: '/console/basics/interface-overview',
             },
-
             {
               text: 'Settings',
               collapsed: false,
               items: [
                 {
+                  text: 'Tabs',
+                  link: '/console/basics/settings/tabs',
+                },
+                {
+                  text: 'Tags',
+                  link: '/console/basics/settings/tags',
+                },
+                {
                   text: 'Workspaces',
                   link: '/console/basics/settings/workspaces',
                 },
               ],
+            },
+            {
+              text: 'Wallet Connection',
+              link: '/console/basics/wallets',
             },
           ],
         },
