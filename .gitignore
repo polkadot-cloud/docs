@@ -23,12 +23,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Yarn Modern
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
